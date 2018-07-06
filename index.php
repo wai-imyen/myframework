@@ -29,8 +29,6 @@ require(ROOT_PATH .'vendor/autoload.php');
 // 框架
 require(ROOT_PATH .'system/Framework.php');
 
-// 輔助函式
-include(DIR_SYSTEM .'helpers/function.php');
 
 // 啟動框架
 (new Yen\Framework($_config))->run();

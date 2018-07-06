@@ -3,15 +3,13 @@
 		<div class="" style="margin-left: 50px;">
 			<h4>最近的文章</h4><br>
 			<div style="line-height: 30px">
-				<li><a href="">20180301 - 最近的文章</a></li>
-				<li><a href="">20180301 - 最近的文章</a></li>
-				<li><a href="">20180301 - 最近的文章</a></li>
-				<li><a href="">20180301 - 最近的文章</a></li>
-				<li><a href="">20180301 - 最近的文章</a></li>
+				<? for($i=0;$i<7;$i++):?>
+					<? if(isset($datas[$i])):?>
+					<li><a href="article/show/<?=$datas[$i]['id']?>"><?=$datas[$i]['title']?></a></li>
+					<? endif;?>
+				<? endfor;?>
 			</div>
-			
 		</div>
-		
 	</div>
 	<div class="col-md-8 col-xs-12  articleIndex">
 		<a href="article/create" role='btn' class='btn btn-primary btn-sm pull-right' >新增文章</a><br>
